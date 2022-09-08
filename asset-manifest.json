@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Meet-App/static/css/main.958f58f8.css",
+    "main.js": "/Meet-App/static/js/main.14097cbd.js",
+    "static/js/787.4b564826.chunk.js": "/Meet-App/static/js/787.4b564826.chunk.js",
+    "static/media/meet-event.png": "/Meet-App/static/media/meet-event.e555b726792a9411ca6f.png",
+    "service-worker.js": "/Meet-App/service-worker.js",
+    "static/media/meet-logo-blue.png": "/Meet-App/static/media/meet-logo-blue.51a25ff95ebec5039899.png",
+    "static/media/file.png": "/Meet-App/static/media/file.e4ab98d529135d3407a8.png",
+    "index.html": "/Meet-App/index.html",
+    "main.958f58f8.css.map": "/Meet-App/static/css/main.958f58f8.css.map",
+    "main.14097cbd.js.map": "/Meet-App/static/js/main.14097cbd.js.map",
+    "787.4b564826.chunk.js.map": "/Meet-App/static/js/787.4b564826.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.958f58f8.css",
+    "static/js/main.14097cbd.js"
+  ]
+}
