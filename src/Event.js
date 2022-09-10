@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from 'react';
 import meetIcon from "./images/meet-event.png"
+import add_icon from "./images/add-circle-outline.svg";
 
 class Event extends Component {
     state = {
@@ -25,6 +26,10 @@ class Event extends Component {
 
         return (
             <div className={this.state.collapsed !== true ? 'event active' : 'event'}>
+                <a href={event.htmlLink} className="calendar-link">
+                    <img  alt='addIcon' style={{ Width:'24px' ,height:'24px' }} src={add_icon} className="add_icon"></img> 
+                    <span>See details on Google Calendar</span>
+                </a>
                 <img alt='event-img' className='event-img' src = {meetIcon}/>
                 <h3 className="title">{event.summary}</h3>
                 <div className="fb-date-location">

@@ -48,14 +48,68 @@
   position: absolute;
   top: 0;
   right: 0;
-  border: 20px solid transparent;
-  border-top: 20px solid #ff7b8e;
-  border-right: 20px solid #ff7b8e;
+  border: 26px solid transparent;
+  border-top: 26px solid #ff7b8e;
+  border-right: 26px solid #ff7b8e;
 }
 
 .container .event.active::before {
-  border-top: 20px solid #ffec7b;
-  border-right: 20px solid #ffec7b;
+  border-top: 26px solid #ffec7b;
+  border-right: 26px solid #ffec7b;
+}
+
+.calendar-link{
+  display: none;
+}
+
+.event.active .calendar-link {
+  position: absolute;
+  border-radius: 10px;
+  right: 5px;
+  top: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  color: #383838;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-weight: bolder;
+}
+
+.event.active .add_icon {
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+}
+
+.event.active .calendar-link:hover {
+  background-color: #ffec7b;
+  width: 290px;
+  transition-delay: 0.5s;
+}
+
+.calendar-link:hover .add_icon {
+  transform: rotate(360deg);
+  transition: 0.9s;
+  transition-delay: 0.5s;
+}
+
+.calendar-link span {
+  visibility: hidden;
+  opacity: 0;
+  white-space: nowrap;
+  transition: 0.5s;
+  transform: translateX(-8px);
+}
+
+.calendar-link:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.75s;
 }
 
 .container .event .fb-date-location {
