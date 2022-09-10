@@ -26,7 +26,7 @@ class Event extends Component {
 
         return (
             <div className={this.state.collapsed !== true ? 'event active' : 'event'}>
-                <a href={event.htmlLink} className="calendar-link">
+                <a href={event.htmlLink} className="calendar-link" target="_blank" rel="noreferrer">
                     <img  alt='addIcon' style={{ Width:'24px' ,height:'24px' }} src={add_icon} className="add_icon"></img> 
                     <span>See details on Google Calendar</span>
                 </a>
